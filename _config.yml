@@ -1,1 +1,42 @@
-theme: jekyll-theme-merlot
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: TALANTO
+email: talanto.linyi@gmail.com
+description: LINYI WANG's BLOG
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://talantolinyi.com" # the base hostname & protocol for your site
+twitter_username: talantolinyi
+github_username:  talantolinyi
+paginate: 5
+theme-dark: false #Set to true to change to dark website theme
+
+author:
+  facebook:         your-id
+  youtubeUser:      your-id
+  youtubeChannel:   your-id
+  twitter:          your-id
+  github:           your-id
+  stackoverflow:    your-id
+  quora:            your-id
+  linkedin:         your-id
+  pinterest:        your-id
+  googlePlus:       your-id
+  instagram:        your-id
+  reddit:           your-id
+  medium:           your-id
+  tumblr:           your-id
+  email:            your-id@your-email.com
+
+copyright:
+  year:             2018
+  name:             Linyi WANG
+
+plugins: [jekyll-paginate, kramdown]
+# Build settings
+markdown: kramdown
