@@ -4,7 +4,7 @@ title:  "Tensorflow Learning Note 1"
 date:   2018-03-21 15:00:00 +0800
 categories: Tensorflow
 ---
-## TF训练时的显存占用问题
+### TF训练时的显存占用问题
 
 选择单个GPU训练  所有的GPU显存都会被占满
 
@@ -14,19 +14,28 @@ Solution：
 
 * 指定分配的显存比例
 	
-    	gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction = 0.333)
-     	sess=tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+```
+gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction = 0.333)
+sess=tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+```
      	
 * 分配显存按需求增长
 
-		config = tf.ConfigProto()  
-		config.gpu_options.allow_growth=True  
-		sess = tf.Session(config=config)  
+```
+config = tf.ConfigProto()  
+config.gpu_options.allow_growth=True  
+sess = tf.Session(config=config)
+```
+  
 * 限制可见GPU数目
 		
-		export CUDA_VISIBLE_DEVICES=1  
+```
+export CUDA_VISIBLE_DEVICES=1
 
-</br>
+```
+		  
+		
+	
 ## TF使用flags定义命令行参数
 	
 ```
@@ -47,6 +56,7 @@ def main(_):
 if __name__ == '__main__':
 	tf.app.run()
 ```
+
 **Conduct**:
 
 ```
