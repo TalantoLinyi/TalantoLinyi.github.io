@@ -6,9 +6,11 @@ categories: Tensorflow
 ---
 ### TF训练时的显存占用问题
 
+
 选择单个GPU训练  所有的GPU显存都会被占满
 
 Source: 在训练时默认占用所有的GPU显存
+
 
 Solution： 
 
@@ -36,7 +38,7 @@ export CUDA_VISIBLE_DEVICES=1
 		  
 		
 	
-## TF使用flags定义命令行参数
+### TF使用flags定义命令行参数
 	
 ```
 import tensorflow as tf
@@ -57,7 +59,7 @@ if __name__ == '__main__':
 	tf.app.run()
 ```
 
-**Conduct**:
+Conduct:
 
 ```
 What the hell am I? I am Linyi
